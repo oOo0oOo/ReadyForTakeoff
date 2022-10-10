@@ -1,0 +1,62 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://sprites/portrait/male/unknown.png" type="Texture" id=61]
+[ext_resource path="res://sprites/ticket_unknown.png" type="Texture" id=62]
+[ext_resource path="res://sprites/bad.png" type="Texture" id=63]
+[ext_resource path="res://sprites/back.png" type="Texture" id=64]
+[ext_resource path="res://sprites/arrow_up.png" type="Texture" id=65]
+[ext_resource path="res://sprites/airport0.png" type="Texture" id=66]
+[ext_resource path="res://sprites/arrow_down.png" type="Texture" id=67]
+[ext_resource path="res://sprites/airport2.png" type="Texture" id=68]
+[ext_resource path="res://sprites/airport1.png" type="Texture" id=69]
+[ext_resource path="res://theme/fonts/VT323-Regular.ttf" type="DynamicFontData" id=70]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 70 )
+
+[node name="PreloadScene" type="Node2D"]
+
+[node name="unknown" type="Sprite" parent="."]
+position = Vector2( 12.4156, 119.202 )
+texture = ExtResource( 61 )
+
+[node name="ticket_unknown" type="Sprite" parent="."]
+position = Vector2( 353.812, 242.399 )
+texture = ExtResource( 62 )
+
+[node name="airport0" type="Sprite" parent="."]
+position = Vector2( 416.418, 411.156 )
+texture = ExtResource( 66 )
+
+[node name="airport1" type="Sprite" parent="."]
+position = Vector2( 416.418, 411.156 )
+texture = ExtResource( 69 )
+
+[node name="airport2" type="Sprite" parent="."]
+position = Vector2( 416.418, 411.156 )
+texture = ExtResource( 68 )
+
+[node name="arrow_down" type="Sprite" parent="."]
+position = Vector2( 416.418, 411.156 )
+texture = ExtResource( 67 )
+
+[node name="arrow_up" type="Sprite" parent="."]
+position = Vector2( 416.418, 411.156 )
+texture = ExtResource( 65 )
+
+[node name="back" type="Sprite" parent="."]
+position = Vector2( 416.418, 411.156 )
+texture = ExtResource( 64 )
+
+[node name="bad" type="Sprite" parent="."]
+position = Vector2( 416.418, 411.156 )
+texture = ExtResource( 63 )
+
+[node name="Label" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 1 )
+text = "fucking font"
+__meta__ = {
+"_edit_use_anchors_": false
+}

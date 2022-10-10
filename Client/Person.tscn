@@ -1,0 +1,153 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://theme/font_person.tres" type="DynamicFont" id=1]
+[ext_resource path="res://sprites/luggage0.png" type="Texture" id=2]
+[ext_resource path="res://Person.gd" type="Script" id=3]
+[ext_resource path="res://sprites/ticket0.png" type="Texture" id=4]
+[ext_resource path="res://sprites/bad.png" type="Texture" id=5]
+[ext_resource path="res://sprites/good.png" type="Texture" id=6]
+[ext_resource path="res://Portrait.tscn" type="PackedScene" id=7]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="Animation" id=6]
+resource_name = "bad"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("bad:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("bad:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4, 0.9, 1.4, 1.9, 2.5, 3 ),
+"transitions": PoolRealArray( 1.68179, 1.07177, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.3, 0.3 ), Vector2( 1, 1 ), Vector2( 0.7, 0.7 ), Vector2( 1, 1 ), Vector2( 0.7, 0.7 ), Vector2( 1.05, 1.05 ), Vector2( 0.2, 0.2 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "good"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("good:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("good:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 1.9, 2.4, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.3, 0.3 ), Vector2( 1, 1 ), Vector2( 0.7, 0.7 ), Vector2( 1, 1 ), Vector2( 0.7, 0.7 ), Vector2( 1, 1 ), Vector2( 0.2, 0.2 ) ]
+}
+
+[node name="Person" type="Control"]
+margin_right = 360.0
+margin_bottom = 236.0
+rect_min_size = Vector2( 360, 236 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Ticket" type="Sprite" parent="."]
+position = Vector2( -9.57977, -1.78992 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="Destination" type="Label" parent="."]
+margin_left = 207.0
+margin_top = 28.0
+margin_right = 351.0
+margin_bottom = 74.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Kathmandu"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Seat" type="Label" parent="."]
+margin_left = 215.197
+margin_top = 93.1785
+margin_right = 287.197
+margin_bottom = 139.178
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "23B"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Portrait" parent="." instance=ExtResource( 7 )]
+position = Vector2( 108, 22 )
+
+[node name="Luggage" type="Sprite" parent="."]
+position = Vector2( 311.372, 115.213 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 2 )
+
+[node name="bad" type="Sprite" parent="."]
+visible = false
+position = Vector2( 183.841, 117.609 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 5 )
+
+[node name="good" type="Sprite" parent="."]
+visible = false
+position = Vector2( 183.841, 117.609 )
+scale = Vector2( 0.76, 0.76 )
+texture = ExtResource( 6 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 16.0
+margin_top = 11.2101
+margin_right = 360.0
+margin_bottom = 231.21
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Anim" type="AnimationPlayer" parent="."]
+anims/bad = SubResource( 6 )
+anims/good = SubResource( 7 )

@@ -1,0 +1,81 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://SimpleButton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://theme/fonts/CaveatBrush-Regular.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 80
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+use_filter = true
+font_data = ExtResource( 2 )
+
+[node name="OnePlayerPopup" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BG" type="ColorRect" parent="."]
+margin_right = 720.0
+margin_bottom = 1280.0
+color = Color( 0.109804, 0.109804, 0.109804, 0.992157 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 18.3721
+margin_top = 151.987
+margin_right = 699.372
+margin_bottom = 374.987
+custom_fonts/font = SubResource( 1 )
+text = "Multiplayer Game!"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 17.0
+margin_top = 388.685
+margin_right = 698.0
+margin_bottom = 717.685
+custom_colors/font_color = Color( 1, 0.105882, 0.105882, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "This game is a cooperative multiplayer game.
+It works best if you play it with 2-8 players.
+
+One player mode is only meant for 
+testing the experience."
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BtnOK" parent="." instance=ExtResource( 1 )]
+margin_top = 818.529
+margin_bottom = 1035.53
+
+[node name="Label" parent="BtnOK" index="0"]
+text = "OK"
+
+[node name="BtnCancel" parent="." instance=ExtResource( 1 )]
+margin_top = 1005.61
+margin_bottom = 1222.61
+
+[node name="Label" parent="BtnCancel" index="0"]
+margin_left = -2.0
+margin_top = -2.0
+margin_right = 805.0
+margin_bottom = 219.0
+text = "Cancel"
+
+[editable path="BtnOK"]
+[editable path="BtnCancel"]

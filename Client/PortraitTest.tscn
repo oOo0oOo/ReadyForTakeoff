@@ -1,0 +1,77 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Portrait.tscn" type="PackedScene" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Portrait" parent="." instance=ExtResource( 1 )]
+position = Vector2( 85.0835, 11.9747 )
+
+[node name="Portrait8" parent="." instance=ExtResource( 1 )]
+position = Vector2( 614.492, 11.9747 )
+
+[node name="Portrait9" parent="." instance=ExtResource( 1 )]
+position = Vector2( 436.762, 11.3445 )
+
+[node name="Portrait10" parent="." instance=ExtResource( 1 )]
+position = Vector2( 253.36, 11.9747 )
+
+[node name="Portrait2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 81.302, 224.999 )
+
+[node name="Portrait13" parent="." instance=ExtResource( 1 )]
+position = Vector2( 610.711, 224.999 )
+
+[node name="Portrait12" parent="." instance=ExtResource( 1 )]
+position = Vector2( 432.981, 224.368 )
+
+[node name="Portrait11" parent="." instance=ExtResource( 1 )]
+position = Vector2( 249.578, 224.999 )
+
+[node name="Portrait3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 88.865, 434.241 )
+
+[node name="Portrait16" parent="." instance=ExtResource( 1 )]
+position = Vector2( 618.274, 434.241 )
+
+[node name="Portrait15" parent="." instance=ExtResource( 1 )]
+position = Vector2( 440.544, 433.611 )
+
+[node name="Portrait14" parent="." instance=ExtResource( 1 )]
+position = Vector2( 257.141, 434.241 )
+
+[node name="Portrait4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 84.7925, 647.641 )
+
+[node name="Portrait19" parent="." instance=ExtResource( 1 )]
+position = Vector2( 614.201, 647.641 )
+
+[node name="Portrait18" parent="." instance=ExtResource( 1 )]
+position = Vector2( 436.471, 647.011 )
+
+[node name="Portrait17" parent="." instance=ExtResource( 1 )]
+position = Vector2( 253.069, 647.641 )
+
+[node name="Portrait5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 88.8651, 862.67 )
+
+[node name="Portrait22" parent="." instance=ExtResource( 1 )]
+position = Vector2( 618.274, 862.67 )
+
+[node name="Portrait21" parent="." instance=ExtResource( 1 )]
+position = Vector2( 440.544, 862.04 )
+
+[node name="Portrait20" parent="." instance=ExtResource( 1 )]
+position = Vector2( 257.141, 862.67 )
+
+[node name="Portrait6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 88.8651, 1072 )
+
+[node name="Portrait25" parent="." instance=ExtResource( 1 )]
+position = Vector2( 618.274, 1072 )
+
+[node name="Portrait24" parent="." instance=ExtResource( 1 )]
+position = Vector2( 440.544, 1071.37 )
+
+[node name="Portrait23" parent="." instance=ExtResource( 1 )]
+position = Vector2( 257.141, 1072 )

@@ -1,0 +1,131 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+[ext_resource path="res://sprites/button_pressed.png" type="Texture" id=2]
+[ext_resource path="res://theme/fonts/CaveatBrush-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://ChooseScreen.tscn" type="PackedScene" id=4]
+[ext_resource path="res://sprites/button_normal.png" type="Texture" id=5]
+[ext_resource path="res://sprites/start_bg.png" type="Texture" id=6]
+[ext_resource path="res://SimpleButton.tscn" type="PackedScene" id=7]
+[ext_resource path="res://JoinScreen.tscn" type="PackedScene" id=8]
+[ext_resource path="res://theme/fonts/VT323-Regular.ttf" type="DynamicFontData" id=9]
+
+[sub_resource type="DynamicFont" id=1]
+size = 110
+use_filter = true
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+font_data = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 30
+use_filter = true
+font_data = ExtResource( 3 )
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BG" type="TextureRect" parent="."]
+margin_right = 720.0
+margin_bottom = 1280.0
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="."]
+margin_right = 723.0
+margin_bottom = 1279.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HostButton" parent="." instance=ExtResource( 7 )]
+margin_left = 171.0
+margin_top = 451.0
+margin_right = 977.0
+margin_bottom = 668.0
+
+[node name="JoinButton" type="TextureButton" parent="."]
+margin_left = 170.712
+margin_top = 575.339
+margin_right = 976.712
+margin_bottom = 792.339
+rect_scale = Vector2( 0.5, 0.5 )
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="JoinButton"]
+margin_left = -1.75806
+margin_top = -1.75812
+margin_right = 805.242
+margin_bottom = 214.242
+custom_fonts/font = SubResource( 1 )
+text = "Join Game"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScreenBlack" type="ColorRect" parent="."]
+margin_left = 281.0
+margin_top = 940.0
+margin_right = 430.0
+margin_bottom = 964.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Screen" type="ColorRect" parent="."]
+margin_left = 282.513
+margin_top = 942.198
+margin_right = 427.513
+margin_bottom = 962.198
+color = Color( 0.176471, 0.184314, 0.227451, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="credits" type="Label" parent="."]
+margin_left = 282.0
+margin_top = 942.0
+margin_right = 428.0
+margin_bottom = 962.0
+custom_colors/font_color = Color( 0.0627451, 0.929412, 0.0745098, 1 )
+custom_fonts/font = SubResource( 2 )
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="JoinScreen" parent="." instance=ExtResource( 8 )]
+visible = false
+
+[node name="Status" type="Label" parent="."]
+margin_left = 40.0
+margin_top = 1237.0
+margin_right = 700.0
+margin_bottom = 1279.0
+custom_fonts/font = SubResource( 3 )
+text = "connecting"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChooseScreen" parent="." instance=ExtResource( 4 )]
+visible = false
+
+[connection signal="button_up" from="HostButton" to="." method="_on_HostButton_button_up"]
+[connection signal="button_up" from="JoinButton" to="." method="_on_JoinButton_button_up"]

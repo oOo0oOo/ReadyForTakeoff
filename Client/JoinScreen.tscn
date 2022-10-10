@@ -1,0 +1,107 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://theme/fonts/CaveatBrush-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://SimpleButton.tscn" type="PackedScene" id=2]
+[ext_resource path="res://sprites/screen_empty.png" type="Texture" id=3]
+[ext_resource path="res://sprites/airport0.png" type="Texture" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 100
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 70
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 1, 1, 1, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="DynamicFont" id=4]
+size = 80
+use_filter = true
+font_data = ExtResource( 1 )
+
+[node name="JoinScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -2.27209
+margin_top = -2.27203
+margin_right = -2.27209
+margin_bottom = -2.27197
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="screen_empty" type="Sprite" parent="."]
+scale = Vector2( 0.48, 0.48 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="title" type="Label" parent="."]
+margin_right = 721.0
+margin_bottom = 230.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Join Game"
+align = 1
+valign = 1
+
+[node name="Airport Code" type="Label" parent="."]
+margin_left = 3.0
+margin_top = 170.022
+margin_right = 724.0
+margin_bottom = 400.022
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Enter Airport Code"
+align = 1
+valign = 1
+
+[node name="TextEdit" type="TextEdit" parent="."]
+margin_left = 235.573
+margin_top = 342.014
+margin_right = 493.573
+margin_bottom = 450.014
+custom_styles/normal = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "XYZ"
+fold_gutter = true
+caret_blink = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BtnJoin" parent="." instance=ExtResource( 2 )]
+margin_left = 166.134
+margin_top = 465.6
+margin_right = 972.134
+margin_bottom = 682.6
+
+[node name="Label" parent="BtnJoin" index="0"]
+text = "Join Game"
+
+[node name="BtnCancel" parent="." instance=ExtResource( 2 )]
+margin_left = 163.862
+margin_top = 1121.65
+margin_right = 969.862
+margin_bottom = 1338.65
+
+[node name="Label" parent="BtnCancel" index="0"]
+text = "Return"
+
+[node name="airport0" type="Sprite" parent="."]
+position = Vector2( 355.943, 865.882 )
+scale = Vector2( 0.48, 0.48 )
+texture = ExtResource( 4 )
+[connection signal="text_changed" from="TextEdit" to="." method="_on_TextEdit_text_changed"]
+
+[editable path="BtnJoin"]
+
+[editable path="BtnCancel"]

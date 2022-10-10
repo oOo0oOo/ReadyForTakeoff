@@ -1,0 +1,104 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://theme/fonts/CaveatBrush-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Tutorial.gd" type="Script" id=2]
+[ext_resource path="res://sprites/button_small_normal.png" type="Texture" id=3]
+[ext_resource path="res://sprites/tutorial02.png" type="Texture" id=4]
+[ext_resource path="res://sprites/tutorial01.png" type="Texture" id=5]
+[ext_resource path="res://sprites/tutorial03.png" type="Texture" id=6]
+[ext_resource path="res://sprites/button_small_pressed.png" type="Texture" id=7]
+[ext_resource path="res://sprites/tutorial00.png" type="Texture" id=8]
+
+[sub_resource type="DynamicFont" id=1]
+size = 120
+font_data = ExtResource( 1 )
+
+[node name="Tutorial" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="BG" type="ColorRect" parent="."]
+margin_right = 717.0
+margin_bottom = 1276.0
+color = Color( 0.137255, 0.137255, 0.137255, 0.858824 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Page0" type="Node2D" parent="."]
+scale = Vector2( 0.48, 0.48 )
+
+[node name="tutorial00" type="Sprite" parent="Page0"]
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Page1" type="Node2D" parent="."]
+visible = false
+scale = Vector2( 0.48, 0.48 )
+
+[node name="tutorial01" type="Sprite" parent="Page1"]
+texture = ExtResource( 5 )
+centered = false
+
+[node name="Page2" type="Node2D" parent="."]
+visible = false
+
+[node name="tutorial02" type="Sprite" parent="Page2"]
+scale = Vector2( 0.48, 0.48 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="Page3" type="Node2D" parent="."]
+visible = false
+
+[node name="tutorial03" type="Sprite" parent="Page3"]
+scale = Vector2( 0.48, 0.48 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="NextButton" type="TextureButton" parent="."]
+margin_left = 470.817
+margin_top = 1126.8
+margin_right = 860.817
+margin_bottom = 1351.8
+rect_scale = Vector2( 0.5, 0.5 )
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="NextButton"]
+margin_right = 382.0
+margin_bottom = 221.0
+custom_fonts/font = SubResource( 1 )
+text = "Next"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackButton" type="TextureButton" parent="."]
+margin_left = 52.7553
+margin_top = 1126.8
+margin_right = 442.755
+margin_bottom = 1351.8
+rect_scale = Vector2( 0.5, 0.5 )
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="BackButton"]
+margin_right = 382.0
+margin_bottom = 226.0
+custom_fonts/font = SubResource( 1 )
+text = "Back"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="button_up" from="NextButton" to="." method="_on_NextButton_button_up"]
+[connection signal="button_up" from="BackButton" to="." method="_on_BackButton_button_up"]

@@ -1,0 +1,161 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://theme/screen.tres" type="DynamicFontData" id=1]
+[ext_resource path="res://Command.gd" type="Script" id=2]
+[ext_resource path="res://sprites/task_led.png" type="Texture" id=3]
+[ext_resource path="res://sprites/task_bg.png" type="Texture" id=4]
+[ext_resource path="res://Portrait.tscn" type="PackedScene" id=5]
+[ext_resource path="res://sprites/bad.png" type="Texture" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 33
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.0627451, 0.929412, 0.0745098, 1 )
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="Animation" id=4]
+resource_name = "bad"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("bad:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.8, 1, 1.4, 1.6, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true, false, true, false, true, false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("task_led:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("task_led:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 1, 0, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "LED"
+length = 10.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("task_led:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.6, 0.9, 1.2, 1.5, 1.8, 2.1, 2.4, 2.7, 2.9, 3.1, 3.3, 3.5, 3.7, 3.9, 4.1, 4.3, 4.5, 4.7, 4.9, 5.1, 5.3, 5.5, 5.7, 5.9, 6.1, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8, 6.9, 7, 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8, 7.9, 8, 8.1, 8.2, 8.3, 8.4, 8.5, 8.6, 8.7, 8.8, 8.9, 9, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6, 9.7, 9.8, 9.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("task_led:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 9.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 0.592157, 0.0156863, 1 ), Color( 1, 0, 0, 1 ) ]
+}
+
+[node name="Command" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="BG" type="Sprite" parent="."]
+position = Vector2( 6.00162, 3.29013 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="Label" type="Label" parent="."]
+margin_left = 58.0
+margin_top = 58.0
+margin_right = 452.0
+margin_bottom = 239.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.0627451, 0.929412, 0.0745098, 1 )
+custom_constants/line_spacing = -10
+text = "Do some shit.
+Its not hard."
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+margin_left = 98.0
+margin_top = 256.0
+margin_right = 395.0
+margin_bottom = 276.0
+custom_styles/fg = SubResource( 2 )
+custom_styles/bg = SubResource( 3 )
+value = 100.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ProgressDecorLabel" type="Label" parent="ProgressBar"]
+margin_left = -40.195
+margin_top = -7.80499
+margin_right = 359.805
+margin_bottom = 101.195
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.0627451, 0.929412, 0.0745098, 1 )
+custom_constants/line_spacing = -10
+text = "> [                       ]"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Portrait" parent="." instance=ExtResource( 5 )]
+position = Vector2( 606.519, 81.4562 )
+scale = Vector2( 1.2, 1.2 )
+
+[node name="bad" type="Sprite" parent="."]
+visible = false
+position = Vector2( 254.188, 164.408 )
+texture = ExtResource( 6 )
+
+[node name="Anim" type="AnimationPlayer" parent="."]
+anims/bad = SubResource( 4 )
+
+[node name="AnimLED" type="AnimationPlayer" parent="."]
+anims/LED = SubResource( 5 )
+
+[node name="task_led" type="Sprite" parent="."]
+modulate = Color( 1, 0.508418, 0.013468, 1 )
+position = Vector2( 435.633, 322.428 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 3 )

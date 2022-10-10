@@ -1,0 +1,157 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://sprites/space_bg.png" type="Texture" id=1]
+[ext_resource path="res://theme/fonts/CaveatBrush-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://sprites/task_led.png" type="Texture" id=3]
+[ext_resource path="res://sprites/spaceshuttle.png" type="Texture" id=4]
+
+[sub_resource type="ParticlesMaterial" id=1]
+flag_disable_z = true
+spread = 5.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 1000.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 0.4
+scale_random = 0.2
+color = Color( 0.984314, 0.360784, 0, 1 )
+hue_variation = 0.05
+hue_variation_random = 0.88
+
+[sub_resource type="Animation" id=2]
+resource_name = "rocket"
+length = 15.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("spaceshuttle:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 15 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -146.682, 986.854 ), Vector2( 744.305, 516.816 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("spaceshuttle:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 14.3, 15 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.9 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("spaceshuttle:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 5, 15 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.48, 0.48 ), Vector2( 0.48, 0.48 ), Vector2( 0.3, 0.3 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath(".:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 15 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[sub_resource type="DynamicFont" id=3]
+size = 60
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 40
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 120
+font_data = ExtResource( 2 )
+
+[node name="Space" type="Node2D"]
+visible = false
+
+[node name="space_bg" type="Sprite" parent="."]
+position = Vector2( -1, -1 )
+scale = Vector2( 0.481, 0.481 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="spaceshuttle" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 744.305, 516.816 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+
+[node name="rocket" type="Particles2D" parent="spaceshuttle"]
+position = Vector2( -305.784, 89.9364 )
+rotation = 2.60567
+amount = 100
+lifetime = 1.5
+local_coords = false
+process_material = SubResource( 1 )
+texture = ExtResource( 3 )
+
+[node name="rocket2" type="Particles2D" parent="spaceshuttle"]
+position = Vector2( -139.401, 197.86 )
+rotation = 2.60567
+amount = 100
+lifetime = 1.5
+local_coords = false
+process_material = SubResource( 1 )
+texture = ExtResource( 3 )
+
+[node name="anim" type="AnimationPlayer" parent="."]
+anims/rocket = SubResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_top = 19.4263
+margin_right = 721.0
+margin_bottom = 163.426
+custom_fonts/font = SubResource( 3 )
+text = "You have reached"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="."]
+margin_left = -5.0
+margin_top = 1135.0
+margin_right = 319.0
+margin_bottom = 1279.0
+custom_fonts/font = SubResource( 4 )
+text = "(and beat the game)"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_top = 135.984
+margin_right = 721.0
+margin_bottom = 279.984
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0.964706, 0.356863, 0.027451, 1 )
+text = "SPACE"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

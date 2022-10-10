@@ -1,0 +1,672 @@
+[gd_scene load_steps=125 format=2]
+
+[ext_resource path="res://sprites/portrait/male/nose/1.png" type="Texture" id=1]
+[ext_resource path="res://sprites/portrait/male/mouth/5.png" type="Texture" id=2]
+[ext_resource path="res://sprites/portrait/male/shirt/3.png" type="Texture" id=3]
+[ext_resource path="res://sprites/portrait/male/shirt/20.png" type="Texture" id=4]
+[ext_resource path="res://sprites/portrait/male/outline/3.png" type="Texture" id=5]
+[ext_resource path="res://sprites/portrait/male/glasses/5.png" type="Texture" id=6]
+[ext_resource path="res://sprites/portrait/male/shirt/7.png" type="Texture" id=7]
+[ext_resource path="res://sprites/portrait/male/shirt/13.png" type="Texture" id=8]
+[ext_resource path="res://sprites/portrait/male/hair/9.png" type="Texture" id=9]
+[ext_resource path="res://sprites/portrait/male/shirt/15.png" type="Texture" id=10]
+[ext_resource path="res://sprites/portrait/male/glasses/4.png" type="Texture" id=11]
+[ext_resource path="res://sprites/portrait/male/hair/0.png" type="Texture" id=12]
+[ext_resource path="res://sprites/portrait/male/shirt/8.png" type="Texture" id=13]
+[ext_resource path="res://sprites/portrait/male/hair/4.png" type="Texture" id=14]
+[ext_resource path="res://sprites/portrait/male/hair/6.png" type="Texture" id=15]
+[ext_resource path="res://sprites/portrait/male/shirt/19.png" type="Texture" id=16]
+[ext_resource path="res://sprites/portrait/male/mouth/1.png" type="Texture" id=17]
+[ext_resource path="res://sprites/portrait/male/shirt/14.png" type="Texture" id=18]
+[ext_resource path="res://sprites/portrait/male/shirt/17.png" type="Texture" id=19]
+[ext_resource path="res://sprites/portrait/male/shirt/18.png" type="Texture" id=20]
+[ext_resource path="res://sprites/portrait/male/eyes/1.png" type="Texture" id=21]
+[ext_resource path="res://sprites/portrait/male/eyes/3.png" type="Texture" id=22]
+[ext_resource path="res://sprites/portrait/male/hair/5.png" type="Texture" id=23]
+[ext_resource path="res://sprites/portrait/male/mouth/3.png" type="Texture" id=24]
+[ext_resource path="res://sprites/portrait/male/glasses/3.png" type="Texture" id=25]
+[ext_resource path="res://sprites/portrait/male/hair/2.png" type="Texture" id=26]
+[ext_resource path="res://sprites/portrait/male/glasses/2.png" type="Texture" id=27]
+[ext_resource path="res://sprites/portrait/male/eyes/0.png" type="Texture" id=28]
+[ext_resource path="res://sprites/portrait/male/nose/3.png" type="Texture" id=29]
+[ext_resource path="res://sprites/portrait/male/eyes/2.png" type="Texture" id=30]
+[ext_resource path="res://sprites/portrait/male/glasses/0.png" type="Texture" id=31]
+[ext_resource path="res://sprites/portrait/male/shirt/1.png" type="Texture" id=32]
+[ext_resource path="res://sprites/portrait/male/shirt/2.png" type="Texture" id=33]
+[ext_resource path="res://sprites/portrait/male/hair/1.png" type="Texture" id=34]
+[ext_resource path="res://sprites/portrait/male/hair/7.png" type="Texture" id=35]
+[ext_resource path="res://sprites/portrait/male/hair/3.png" type="Texture" id=36]
+[ext_resource path="res://sprites/portrait/male/hair/8.png" type="Texture" id=37]
+[ext_resource path="res://sprites/portrait/male/glasses/1.png" type="Texture" id=38]
+[ext_resource path="res://sprites/portrait/male/hair/10.png" type="Texture" id=39]
+[ext_resource path="res://sprites/portrait/male/ears/0.png" type="Texture" id=40]
+[ext_resource path="res://sprites/portrait/male/mouth/2.png" type="Texture" id=41]
+[ext_resource path="res://sprites/portrait/male/shirt/4.png" type="Texture" id=42]
+[ext_resource path="res://sprites/portrait/male/shirt/0.png" type="Texture" id=43]
+[ext_resource path="res://sprites/portrait/male/nose/0.png" type="Texture" id=44]
+[ext_resource path="res://sprites/portrait/male/outline/0.png" type="Texture" id=45]
+[ext_resource path="res://sprites/portrait/male/shirt/5.png" type="Texture" id=46]
+[ext_resource path="res://sprites/portrait/male/shirt/6.png" type="Texture" id=47]
+[ext_resource path="res://sprites/portrait/male/mouth/4.png" type="Texture" id=48]
+[ext_resource path="res://sprites/portrait/male/shirt/16.png" type="Texture" id=49]
+[ext_resource path="res://sprites/portrait/male/nose/2.png" type="Texture" id=50]
+[ext_resource path="res://sprites/portrait/male/outline/1.png" type="Texture" id=51]
+[ext_resource path="res://sprites/portrait/male/shirt/12.png" type="Texture" id=52]
+[ext_resource path="res://sprites/portrait/male/mouth/0.png" type="Texture" id=53]
+[ext_resource path="res://sprites/portrait/male/mouth/6.png" type="Texture" id=54]
+[ext_resource path="res://sprites/portrait/male/shirt/9.png" type="Texture" id=55]
+[ext_resource path="res://sprites/portrait/male/shirt/10.png" type="Texture" id=56]
+[ext_resource path="res://sprites/portrait/male/shirt/11.png" type="Texture" id=57]
+[ext_resource path="res://sprites/portrait/male/outline/2.png" type="Texture" id=58]
+[ext_resource path="res://sprites/portrait/male/brows/0.png" type="Texture" id=59]
+[ext_resource path="res://Images.gd" type="Script" id=60]
+[ext_resource path="res://sprites/portrait/female/brows/0.png" type="Texture" id=61]
+[ext_resource path="res://sprites/portrait/female/hair/10.png" type="Texture" id=62]
+[ext_resource path="res://sprites/portrait/female/glasses/2.png" type="Texture" id=63]
+[ext_resource path="res://sprites/portrait/female/hair/2.png" type="Texture" id=64]
+[ext_resource path="res://sprites/portrait/female/mouth/0.png" type="Texture" id=65]
+[ext_resource path="res://sprites/portrait/female/eyes/0.png" type="Texture" id=66]
+[ext_resource path="res://sprites/portrait/female/hair/9.png" type="Texture" id=67]
+[ext_resource path="res://sprites/portrait/female/hair/4.png" type="Texture" id=68]
+[ext_resource path="res://sprites/portrait/female/mouth/2.png" type="Texture" id=69]
+[ext_resource path="res://sprites/portrait/female/glasses/0.png" type="Texture" id=70]
+[ext_resource path="res://sprites/portrait/female/eyes/1.png" type="Texture" id=71]
+[ext_resource path="res://sprites/portrait/female/mouth/3.png" type="Texture" id=72]
+[ext_resource path="res://sprites/portrait/female/hair/8.png" type="Texture" id=73]
+[ext_resource path="res://sprites/portrait/female/hair/7.png" type="Texture" id=74]
+[ext_resource path="res://sprites/portrait/female/brows/2.png" type="Texture" id=75]
+[ext_resource path="res://sprites/portrait/female/hair/3.png" type="Texture" id=76]
+[ext_resource path="res://sprites/portrait/female/glasses/5.png" type="Texture" id=77]
+[ext_resource path="res://sprites/portrait/female/hair/0.png" type="Texture" id=78]
+[ext_resource path="res://sprites/portrait/female/glasses/3.png" type="Texture" id=79]
+[ext_resource path="res://sprites/portrait/female/glasses/4.png" type="Texture" id=80]
+[ext_resource path="res://sprites/portrait/female/hair/6.png" type="Texture" id=81]
+[ext_resource path="res://sprites/portrait/female/hair/1.png" type="Texture" id=82]
+[ext_resource path="res://sprites/portrait/female/mouth/1.png" type="Texture" id=83]
+[ext_resource path="res://sprites/portrait/female/ears/0.png" type="Texture" id=84]
+[ext_resource path="res://sprites/portrait/female/glasses/1.png" type="Texture" id=85]
+[ext_resource path="res://sprites/portrait/female/eyes/2.png" type="Texture" id=86]
+[ext_resource path="res://sprites/portrait/female/hair/5.png" type="Texture" id=87]
+[ext_resource path="res://sprites/portrait/female/brows/1.png" type="Texture" id=88]
+[ext_resource path="res://sprites/portrait/female/unknown.png" type="Texture" id=89]
+[ext_resource path="res://sprites/portrait/male/unknown.png" type="Texture" id=90]
+[ext_resource path="res://sprites/portrait/female/outline/4.png" type="Texture" id=91]
+[ext_resource path="res://sprites/portrait/female/outline/0.png" type="Texture" id=92]
+[ext_resource path="res://sprites/portrait/female/nose/0.png" type="Texture" id=93]
+[ext_resource path="res://sprites/portrait/female/nose/1.png" type="Texture" id=94]
+[ext_resource path="res://sprites/portrait/female/nose/2.png" type="Texture" id=95]
+[ext_resource path="res://sprites/airplane0.png" type="Texture" id=96]
+[ext_resource path="res://sprites/portrait/female/outline/1.png" type="Texture" id=97]
+[ext_resource path="res://sprites/portrait/female/outline/2.png" type="Texture" id=98]
+[ext_resource path="res://sprites/portrait/female/shirt/0.png" type="Texture" id=99]
+[ext_resource path="res://sprites/portrait/female/outline/3.png" type="Texture" id=100]
+[ext_resource path="res://sprites/portrait/female/shirt/2.png" type="Texture" id=101]
+[ext_resource path="res://sprites/portrait/female/shirt/3.png" type="Texture" id=102]
+[ext_resource path="res://sprites/portrait/female/shirt/1.png" type="Texture" id=103]
+[ext_resource path="res://sprites/portrait/female/shirt/4.png" type="Texture" id=104]
+[ext_resource path="res://sprites/portrait/female/shirt/5.png" type="Texture" id=105]
+[ext_resource path="res://sprites/portrait/female/shirt/6.png" type="Texture" id=106]
+[ext_resource path="res://sprites/portrait/female/shirt/7.png" type="Texture" id=107]
+[ext_resource path="res://sprites/portrait/female/shirt/8.png" type="Texture" id=108]
+[ext_resource path="res://sprites/portrait/female/shirt/9.png" type="Texture" id=109]
+[ext_resource path="res://sprites/portrait/female/shirt/10.png" type="Texture" id=110]
+[ext_resource path="res://sprites/portrait/female/shirt/11.png" type="Texture" id=111]
+[ext_resource path="res://sprites/portrait/female/shirt/12.png" type="Texture" id=112]
+[ext_resource path="res://sprites/portrait/female/shirt/13.png" type="Texture" id=113]
+[ext_resource path="res://sprites/portrait/female/shirt/16.png" type="Texture" id=114]
+[ext_resource path="res://sprites/portrait/female/shirt/14.png" type="Texture" id=115]
+[ext_resource path="res://sprites/portrait/female/shirt/15.png" type="Texture" id=116]
+[ext_resource path="res://sprites/portrait/female/shirt/17.png" type="Texture" id=117]
+[ext_resource path="res://sprites/portrait/female/shirt/18.png" type="Texture" id=118]
+[ext_resource path="res://sprites/portrait/female/shirt/19.png" type="Texture" id=119]
+[ext_resource path="res://sprites/portrait/female/shirt/20.png" type="Texture" id=120]
+[ext_resource path="res://sprites/airplane2.png" type="Texture" id=121]
+[ext_resource path="res://sprites/airplane3.png" type="Texture" id=122]
+[ext_resource path="res://sprites/airplane1.png" type="Texture" id=123]
+[ext_resource path="res://sprites/airplane4.png" type="Texture" id=124]
+
+[node name="images" type="Node2D"]
+visible = false
+script = ExtResource( 60 )
+
+[node name="male" type="Node2D" parent="."]
+
+[node name="brows" type="Node2D" parent="male"]
+visible = false
+
+[node name="0" type="Sprite" parent="male/brows"]
+position = Vector2( -4.02197, -0.66687 )
+texture = ExtResource( 59 )
+
+[node name="ears" type="Node2D" parent="male"]
+visible = false
+
+[node name="0" type="Sprite" parent="male/ears"]
+position = Vector2( -25.6067, 46.8195 )
+texture = ExtResource( 40 )
+
+[node name="eyes" type="Node2D" parent="male"]
+visible = false
+
+[node name="0" type="Sprite" parent="male/eyes"]
+position = Vector2( -12.6559, -9.30072 )
+texture = ExtResource( 28 )
+
+[node name="1" type="Sprite" parent="male/eyes"]
+position = Vector2( -12.6559, -9.30072 )
+texture = ExtResource( 21 )
+
+[node name="2" type="Sprite" parent="male/eyes"]
+position = Vector2( -12.6559, -9.30072 )
+texture = ExtResource( 30 )
+
+[node name="3" type="Sprite" parent="male/eyes"]
+position = Vector2( -12.6559, -9.30072 )
+texture = ExtResource( 22 )
+
+[node name="glasses" type="Node2D" parent="male"]
+visible = false
+
+[node name="0" type="Sprite" parent="male/glasses"]
+position = Vector2( -8.33899, 16.6009 )
+texture = ExtResource( 31 )
+
+[node name="1" type="Sprite" parent="male/glasses"]
+position = Vector2( -8.33899, 16.6009 )
+texture = ExtResource( 38 )
+
+[node name="2" type="Sprite" parent="male/glasses"]
+position = Vector2( -8.33899, 16.6009 )
+texture = ExtResource( 27 )
+
+[node name="3" type="Sprite" parent="male/glasses"]
+position = Vector2( -8.33899, 16.6009 )
+texture = ExtResource( 25 )
+
+[node name="4" type="Sprite" parent="male/glasses"]
+position = Vector2( -8.33899, 16.6009 )
+texture = ExtResource( 11 )
+
+[node name="5" type="Sprite" parent="male/glasses"]
+position = Vector2( -8.33899, 16.6009 )
+texture = ExtResource( 6 )
+
+[node name="hair" type="Node2D" parent="male"]
+
+[node name="0" type="Sprite" parent="male/hair"]
+position = Vector2( 0.294922, 70.5626 )
+texture = ExtResource( 12 )
+
+[node name="1" type="Sprite" parent="male/hair"]
+position = Vector2( 0.294922, 70.5626 )
+texture = ExtResource( 34 )
+
+[node name="2" type="Sprite" parent="male/hair"]
+position = Vector2( 0.294922, 70.5626 )
+texture = ExtResource( 26 )
+
+[node name="3" type="Sprite" parent="male/hair"]
+position = Vector2( 0.294922, 70.5626 )
+texture = ExtResource( 36 )
+
+[node name="4" type="Sprite" parent="male/hair"]
+position = Vector2( 0.294922, 70.5626 )
+texture = ExtResource( 14 )
+
+[node name="5" type="Sprite" parent="male/hair"]
+position = Vector2( 0.294922, 70.5626 )
+texture = ExtResource( 23 )
+
+[node name="6" type="Sprite" parent="male/hair"]
+position = Vector2( 0.294922, 70.5626 )
+texture = ExtResource( 15 )
+
+[node name="7" type="Sprite" parent="male/hair"]
+position = Vector2( 0.294922, 70.5626 )
+texture = ExtResource( 35 )
+
+[node name="8" type="Sprite" parent="male/hair"]
+position = Vector2( 0.294922, 70.5626 )
+texture = ExtResource( 37 )
+
+[node name="9" type="Sprite" parent="male/hair"]
+position = Vector2( 0.294922, 70.5626 )
+texture = ExtResource( 9 )
+
+[node name="10" type="Sprite" parent="male/hair"]
+position = Vector2( 0.294922, 70.5626 )
+texture = ExtResource( 39 )
+
+[node name="mouth" type="Node2D" parent="male"]
+
+[node name="0" type="Sprite" parent="male/mouth"]
+position = Vector2( -12.6559, -22.2516 )
+texture = ExtResource( 53 )
+
+[node name="1" type="Sprite" parent="male/mouth"]
+position = Vector2( -12.6559, -22.2516 )
+texture = ExtResource( 17 )
+
+[node name="2" type="Sprite" parent="male/mouth"]
+position = Vector2( -12.6559, -22.2516 )
+texture = ExtResource( 41 )
+
+[node name="3" type="Sprite" parent="male/mouth"]
+position = Vector2( -12.6559, -22.2516 )
+texture = ExtResource( 24 )
+
+[node name="4" type="Sprite" parent="male/mouth"]
+position = Vector2( -12.6559, -22.2516 )
+texture = ExtResource( 48 )
+
+[node name="5" type="Sprite" parent="male/mouth"]
+position = Vector2( -12.6559, -22.2516 )
+texture = ExtResource( 2 )
+
+[node name="6" type="Sprite" parent="male/mouth"]
+position = Vector2( -12.6559, -22.2516 )
+texture = ExtResource( 54 )
+
+[node name="nose" type="Node2D" parent="male"]
+
+[node name="0" type="Sprite" parent="male/nose"]
+position = Vector2( -8.33899, 1.49164 )
+texture = ExtResource( 44 )
+
+[node name="1" type="Sprite" parent="male/nose"]
+position = Vector2( -8.33899, 1.49164 )
+texture = ExtResource( 1 )
+
+[node name="2" type="Sprite" parent="male/nose"]
+position = Vector2( -8.33899, 1.49164 )
+texture = ExtResource( 50 )
+
+[node name="3" type="Sprite" parent="male/nose"]
+position = Vector2( -8.33899, 1.49164 )
+texture = ExtResource( 29 )
+
+[node name="outline" type="Node2D" parent="male"]
+
+[node name="0" type="Sprite" parent="male/outline"]
+position = Vector2( -10.4974, 16.6009 )
+texture = ExtResource( 45 )
+
+[node name="1" type="Sprite" parent="male/outline"]
+position = Vector2( -10.4974, 16.6009 )
+texture = ExtResource( 51 )
+
+[node name="2" type="Sprite" parent="male/outline"]
+position = Vector2( -10.4974, 16.6009 )
+texture = ExtResource( 58 )
+
+[node name="3" type="Sprite" parent="male/outline"]
+position = Vector2( -10.4974, 16.6009 )
+texture = ExtResource( 5 )
+
+[node name="shirt" type="Node2D" parent="male"]
+
+[node name="0" type="Sprite" parent="male/shirt"]
+position = Vector2( -21.2898, -13.6177 )
+texture = ExtResource( 43 )
+
+[node name="1" type="Sprite" parent="male/shirt"]
+position = Vector2( -21.2898, -13.6177 )
+texture = ExtResource( 32 )
+
+[node name="2" type="Sprite" parent="male/shirt"]
+position = Vector2( -21.2898, -13.6177 )
+texture = ExtResource( 33 )
+
+[node name="3" type="Sprite" parent="male/shirt"]
+position = Vector2( -21.2898, -13.6177 )
+texture = ExtResource( 3 )
+
+[node name="4" type="Sprite" parent="male/shirt"]
+position = Vector2( -21.2898, -13.6177 )
+texture = ExtResource( 42 )
+
+[node name="5" type="Sprite" parent="male/shirt"]
+position = Vector2( -21.2898, -13.6177 )
+texture = ExtResource( 46 )
+
+[node name="6" type="Sprite" parent="male/shirt"]
+position = Vector2( -21.2898, -13.6177 )
+texture = ExtResource( 47 )
+
+[node name="7" type="Sprite" parent="male/shirt"]
+position = Vector2( -21.2898, -13.6177 )
+texture = ExtResource( 7 )
+
+[node name="8" type="Sprite" parent="male/shirt"]
+position = Vector2( -21.2898, -13.6177 )
+texture = ExtResource( 13 )
+
+[node name="9" type="Sprite" parent="male/shirt"]
+position = Vector2( -21.2898, -13.6177 )
+texture = ExtResource( 55 )
+
+[node name="10" type="Sprite" parent="male/shirt"]
+position = Vector2( -21.2898, -13.6177 )
+texture = ExtResource( 56 )
+
+[node name="11" type="Sprite" parent="male/shirt"]
+position = Vector2( -21.2898, -13.6177 )
+texture = ExtResource( 57 )
+
+[node name="12" type="Sprite" parent="male/shirt"]
+position = Vector2( -21.2898, -13.6177 )
+texture = ExtResource( 52 )
+
+[node name="13" type="Sprite" parent="male/shirt"]
+position = Vector2( -21.2898, -13.6177 )
+texture = ExtResource( 8 )
+
+[node name="14" type="Sprite" parent="male/shirt"]
+position = Vector2( -21.2898, -13.6177 )
+texture = ExtResource( 18 )
+
+[node name="15" type="Sprite" parent="male/shirt"]
+position = Vector2( -21.2898, -13.6177 )
+texture = ExtResource( 10 )
+
+[node name="16" type="Sprite" parent="male/shirt"]
+position = Vector2( -21.2898, -13.6177 )
+texture = ExtResource( 49 )
+
+[node name="17" type="Sprite" parent="male/shirt"]
+position = Vector2( -21.2898, -13.6177 )
+texture = ExtResource( 19 )
+
+[node name="18" type="Sprite" parent="male/shirt"]
+position = Vector2( -21.2898, -13.6177 )
+texture = ExtResource( 20 )
+
+[node name="19" type="Sprite" parent="male/shirt"]
+position = Vector2( -21.2898, -13.6177 )
+texture = ExtResource( 16 )
+
+[node name="20" type="Sprite" parent="male/shirt"]
+position = Vector2( -21.2898, -13.6177 )
+texture = ExtResource( 4 )
+
+[node name="female" type="Node2D" parent="."]
+visible = false
+
+[node name="brows" type="Node2D" parent="female"]
+
+[node name="0" type="Sprite" parent="female/brows"]
+position = Vector2( 1.62903, 25.458 )
+texture = ExtResource( 61 )
+
+[node name="1" type="Sprite" parent="female/brows"]
+position = Vector2( 5.52515, 23.51 )
+texture = ExtResource( 88 )
+
+[node name="2" type="Sprite" parent="female/brows"]
+position = Vector2( 5.52515, 23.51 )
+texture = ExtResource( 75 )
+
+[node name="ears" type="Node2D" parent="female"]
+
+[node name="0" type="Sprite" parent="female/ears"]
+position = Vector2( -6.16296, 9.87387 )
+texture = ExtResource( 84 )
+
+[node name="eyes" type="Node2D" parent="female"]
+
+[node name="0" type="Sprite" parent="female/eyes"]
+position = Vector2( 3.57703, 9.87387 )
+texture = ExtResource( 66 )
+
+[node name="1" type="Sprite" parent="female/eyes"]
+position = Vector2( -0.31897, 9.87387 )
+texture = ExtResource( 71 )
+
+[node name="2" type="Sprite" parent="female/eyes"]
+position = Vector2( -0.31897, 9.87387 )
+texture = ExtResource( 86 )
+
+[node name="glasses" type="Node2D" parent="female"]
+
+[node name="0" type="Sprite" parent="female/glasses"]
+position = Vector2( -4.21497, 19.614 )
+texture = ExtResource( 70 )
+
+[node name="1" type="Sprite" parent="female/glasses"]
+position = Vector2( -4.21497, 19.614 )
+texture = ExtResource( 85 )
+
+[node name="2" type="Sprite" parent="female/glasses"]
+position = Vector2( -4.21497, 19.614 )
+texture = ExtResource( 63 )
+
+[node name="3" type="Sprite" parent="female/glasses"]
+position = Vector2( -4.21497, 19.614 )
+texture = ExtResource( 79 )
+
+[node name="4" type="Sprite" parent="female/glasses"]
+position = Vector2( -4.21497, 19.614 )
+texture = ExtResource( 80 )
+
+[node name="5" type="Sprite" parent="female/glasses"]
+position = Vector2( -4.21497, 19.614 )
+texture = ExtResource( 77 )
+
+[node name="hair" type="Node2D" parent="female"]
+
+[node name="0" type="Sprite" parent="female/hair"]
+position = Vector2( -4.21497, 46.8863 )
+texture = ExtResource( 78 )
+
+[node name="1" type="Sprite" parent="female/hair"]
+position = Vector2( -4.21497, 46.8863 )
+texture = ExtResource( 82 )
+
+[node name="2" type="Sprite" parent="female/hair"]
+position = Vector2( -4.21497, 46.8863 )
+texture = ExtResource( 64 )
+
+[node name="3" type="Sprite" parent="female/hair"]
+position = Vector2( -4.21497, 46.8863 )
+texture = ExtResource( 76 )
+
+[node name="4" type="Sprite" parent="female/hair"]
+position = Vector2( -4.21497, 46.8863 )
+texture = ExtResource( 68 )
+
+[node name="5" type="Sprite" parent="female/hair"]
+position = Vector2( -4.21497, 46.8863 )
+texture = ExtResource( 87 )
+
+[node name="6" type="Sprite" parent="female/hair"]
+position = Vector2( -4.21497, 46.8863 )
+texture = ExtResource( 81 )
+
+[node name="7" type="Sprite" parent="female/hair"]
+position = Vector2( -4.21497, 46.8863 )
+texture = ExtResource( 74 )
+
+[node name="8" type="Sprite" parent="female/hair"]
+position = Vector2( -4.21497, 46.8863 )
+texture = ExtResource( 73 )
+
+[node name="9" type="Sprite" parent="female/hair"]
+position = Vector2( -4.21497, 46.8863 )
+texture = ExtResource( 67 )
+
+[node name="10" type="Sprite" parent="female/hair"]
+position = Vector2( -4.21497, 46.8863 )
+texture = ExtResource( 62 )
+
+[node name="mouth" type="Node2D" parent="female"]
+
+[node name="0" type="Sprite" parent="female/mouth"]
+position = Vector2( -0.31897, -7.65833 )
+texture = ExtResource( 65 )
+
+[node name="1" type="Sprite" parent="female/mouth"]
+position = Vector2( -13.9551, -25.1905 )
+texture = ExtResource( 83 )
+
+[node name="2" type="Sprite" parent="female/mouth"]
+position = Vector2( -13.9551, -25.1905 )
+texture = ExtResource( 69 )
+
+[node name="3" type="Sprite" parent="female/mouth"]
+position = Vector2( -13.9551, -25.1905 )
+texture = ExtResource( 72 )
+
+[node name="nose" type="Node2D" parent="female"]
+
+[node name="0" type="Sprite" parent="female/nose"]
+position = Vector2( 3.57703, -1.81424 )
+texture = ExtResource( 93 )
+
+[node name="1" type="Sprite" parent="female/nose"]
+position = Vector2( 5.52515, -9.60632 )
+texture = ExtResource( 94 )
+
+[node name="2" type="Sprite" parent="female/nose"]
+position = Vector2( 5.52515, -9.60632 )
+texture = ExtResource( 95 )
+
+[node name="outline" type="Node2D" parent="female"]
+
+[node name="0" type="Sprite" parent="female/outline"]
+position = Vector2( 7.47314, -5.7103 )
+texture = ExtResource( 92 )
+
+[node name="1" type="Sprite" parent="female/outline"]
+position = Vector2( 7.47314, -5.7103 )
+texture = ExtResource( 97 )
+
+[node name="2" type="Sprite" parent="female/outline"]
+position = Vector2( 7.47314, -5.7103 )
+texture = ExtResource( 98 )
+
+[node name="3" type="Sprite" parent="female/outline"]
+position = Vector2( 7.47314, -5.7103 )
+texture = ExtResource( 100 )
+
+[node name="4" type="Sprite" parent="female/outline"]
+position = Vector2( 9.42114, -63.2374 )
+texture = ExtResource( 91 )
+
+[node name="shirt" type="Node2D" parent="female"]
+
+[node name="0" type="Sprite" parent="female/shirt"]
+position = Vector2( 3.57703, -58.3069 )
+texture = ExtResource( 99 )
+
+[node name="1" type="Sprite" parent="female/shirt"]
+position = Vector2( 3.57703, -58.3069 )
+texture = ExtResource( 103 )
+
+[node name="2" type="Sprite" parent="female/shirt"]
+position = Vector2( 3.57703, -58.3069 )
+texture = ExtResource( 101 )
+
+[node name="3" type="Sprite" parent="female/shirt"]
+position = Vector2( 3.57703, -58.3069 )
+texture = ExtResource( 102 )
+
+[node name="4" type="Sprite" parent="female/shirt"]
+position = Vector2( 3.57703, -58.3069 )
+texture = ExtResource( 104 )
+
+[node name="5" type="Sprite" parent="female/shirt"]
+position = Vector2( 3.57703, -58.3069 )
+texture = ExtResource( 105 )
+
+[node name="6" type="Sprite" parent="female/shirt"]
+position = Vector2( 3.57703, -58.3069 )
+texture = ExtResource( 106 )
+
+[node name="7" type="Sprite" parent="female/shirt"]
+position = Vector2( 3.57703, -58.3069 )
+texture = ExtResource( 107 )
+
+[node name="8" type="Sprite" parent="female/shirt"]
+position = Vector2( 3.57703, -58.3069 )
+texture = ExtResource( 108 )
+
+[node name="9" type="Sprite" parent="female/shirt"]
+position = Vector2( 3.57703, -58.3069 )
+texture = ExtResource( 109 )
+
+[node name="10" type="Sprite" parent="female/shirt"]
+position = Vector2( 3.57703, -58.3069 )
+texture = ExtResource( 110 )
+
+[node name="11" type="Sprite" parent="female/shirt"]
+position = Vector2( 3.57703, -58.3069 )
+texture = ExtResource( 111 )
+
+[node name="12" type="Sprite" parent="female/shirt"]
+position = Vector2( 3.57703, -58.3069 )
+texture = ExtResource( 112 )
+
+[node name="13" type="Sprite" parent="female/shirt"]
+position = Vector2( 3.57703, -58.3069 )
+texture = ExtResource( 113 )
+
+[node name="14" type="Sprite" parent="female/shirt"]
+position = Vector2( 3.57703, -58.3069 )
+texture = ExtResource( 115 )
+
+[node name="15" type="Sprite" parent="female/shirt"]
+position = Vector2( 3.57703, -58.3069 )
+texture = ExtResource( 116 )
+
+[node name="16" type="Sprite" parent="female/shirt"]
+position = Vector2( 3.57703, -58.3069 )
+texture = ExtResource( 114 )
+
+[node name="17" type="Sprite" parent="female/shirt"]
+position = Vector2( 3.57703, -58.3069 )
+texture = ExtResource( 117 )
+
+[node name="18" type="Sprite" parent="female/shirt"]
+position = Vector2( 3.57703, -58.3069 )
+texture = ExtResource( 118 )
+
+[node name="19" type="Sprite" parent="female/shirt"]
+position = Vector2( 3.57703, -58.3069 )
+texture = ExtResource( 119 )
+
+[node name="20" type="Sprite" parent="female/shirt"]
+position = Vector2( 3.57703, -58.3069 )
+texture = ExtResource( 120 )
+
+[node name="male_unknown" type="Sprite" parent="."]
+visible = false
+position = Vector2( 1.62903, -27.1385 )
+texture = ExtResource( 90 )
+
+[node name="female_unknown" type="Sprite" parent="."]
+visible = false
+position = Vector2( 5.52515, -50.5148 )
+texture = ExtResource( 89 )
+
+[node name="airplanes" type="Node2D" parent="."]
+visible = false
+
+[node name="0" type="Sprite" parent="airplanes"]
+position = Vector2( -66.7418, -122.168 )
+texture = ExtResource( 96 )
+
+[node name="1" type="Sprite" parent="airplanes"]
+position = Vector2( -66.7418, -122.168 )
+texture = ExtResource( 123 )
+
+[node name="2" type="Sprite" parent="airplanes"]
+position = Vector2( -66.7418, -122.168 )
+texture = ExtResource( 121 )
+
+[node name="3" type="Sprite" parent="airplanes"]
+position = Vector2( -66.7418, -122.168 )
+texture = ExtResource( 122 )
+
+[node name="4" type="Sprite" parent="airplanes"]
+position = Vector2( -66.7418, -122.168 )
+texture = ExtResource( 124 )

@@ -1,0 +1,153 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://theme/fonts/CaveatBrush-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://sprites/silhouette.png" type="Texture" id=2]
+[ext_resource path="res://SimpleButton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://sprites/screen_lobby.png" type="Texture" id=4]
+[ext_resource path="res://sprites/chairs.png" type="Texture" id=5]
+[ext_resource path="res://OnePlayerPopup.tscn" type="PackedScene" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 70
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 40
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 60
+use_filter = true
+font_data = ExtResource( 1 )
+
+[node name="Lobby" type="Node2D"]
+
+[node name="screen_lobby" type="Sprite" parent="."]
+scale = Vector2( 0.48, 0.48 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="Title" type="Label" parent="."]
+margin_left = 91.0352
+margin_top = 96.5526
+margin_right = 648.035
+margin_bottom = 172.553
+custom_fonts/font = SubResource( 1 )
+text = "Welcome to the Airport:"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Code" type="Label" parent="."]
+margin_left = 81.9651
+margin_top = 179.079
+margin_right = 638.965
+margin_bottom = 280.079
+custom_colors/font_color = Color( 0.941176, 0.745098, 0.231373, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "YZH"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Subtitle" type="Label" parent="."]
+margin_left = 83.4825
+margin_top = 261.64
+margin_right = 640.483
+margin_bottom = 366.64
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "New players have to enter
+this code to join the game."
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Waiting" type="Label" parent="."]
+margin_left = 83.4825
+margin_top = 1019.42
+margin_right = 640.483
+margin_bottom = 1124.42
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 4 )
+text = "4 Players are ready"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StartButton" parent="." instance=ExtResource( 3 )]
+margin_left = 171.508
+margin_top = 1140.2
+margin_right = 977.508
+margin_bottom = 1357.2
+
+[node name="Label" parent="StartButton" index="0"]
+margin_left = 2.78637
+margin_right = 809.786
+text = "Let's Go!"
+
+[node name="silhouette0" type="Sprite" parent="."]
+position = Vector2( 67.64, 914.32 )
+scale = Vector2( 0.48, 0.48 )
+texture = ExtResource( 2 )
+
+[node name="silhouette1" type="Sprite" parent="."]
+position = Vector2( 147.623, 914.32 )
+scale = Vector2( 0.48, 0.48 )
+texture = ExtResource( 2 )
+
+[node name="silhouette2" type="Sprite" parent="."]
+position = Vector2( 228.607, 914.32 )
+scale = Vector2( 0.48, 0.48 )
+texture = ExtResource( 2 )
+
+[node name="silhouette3" type="Sprite" parent="."]
+position = Vector2( 309.59, 914.32 )
+scale = Vector2( 0.48, 0.48 )
+texture = ExtResource( 2 )
+
+[node name="silhouette4" type="Sprite" parent="."]
+position = Vector2( 427.251, 914.32 )
+scale = Vector2( 0.48, 0.48 )
+texture = ExtResource( 2 )
+
+[node name="silhouette5" type="Sprite" parent="."]
+position = Vector2( 507.235, 914.32 )
+scale = Vector2( 0.48, 0.48 )
+texture = ExtResource( 2 )
+
+[node name="silhouette6" type="Sprite" parent="."]
+position = Vector2( 588.218, 914.32 )
+scale = Vector2( 0.48, 0.48 )
+texture = ExtResource( 2 )
+
+[node name="silhouette7" type="Sprite" parent="."]
+position = Vector2( 669.201, 914.32 )
+scale = Vector2( 0.48, 0.48 )
+texture = ExtResource( 2 )
+
+[node name="chairs" type="Sprite" parent="."]
+position = Vector2( 185.731, 936.759 )
+scale = Vector2( 0.48, 0.48 )
+texture = ExtResource( 5 )
+
+[node name="chairs2" type="Sprite" parent="."]
+position = Vector2( 545.343, 936.759 )
+scale = Vector2( 0.48, 0.48 )
+texture = ExtResource( 5 )
+
+[node name="OnePlayerPopup" parent="." instance=ExtResource( 6 )]
+visible = false
+
+[editable path="StartButton"]
